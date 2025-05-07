@@ -18,7 +18,9 @@ driver.find_element(By.ID,"inlineRadio2").click()
 driver.find_element(By.XPATH,"//input[@type='submit']").click()
 saveMessage = driver.find_element(By.CLASS_NAME,"alert-success").text
 print(saveMessage)
+print("Success")
 assert "Success" in saveMessage
+print("Assert Successfull")
 driver.find_element(By.XPATH,"//form-comp/div/h4/input[@name='name']").send_keys("Helloo")
 
 
